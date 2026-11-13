@@ -346,7 +346,7 @@ end)
 Tabs.Visuals:AddToggle("EspOn", { Title = "Highlight", Default = false })
 Tabs.Visuals:AddToggle("EspNames", { Title = "Name + Distanz", Default = false })
 Tabs.Visuals:AddToggle("EspLines", {
-    Title = "ESP Linien", Description = DrawingLib and nil or "Dein Executor hat keine Drawing-Library", Default = false,
+    Title = "ESP Linien", Description = (not DrawingLib) and "Dein Executor hat keine Drawing-Library" or nil, Default = false,
 })
 Tabs.Visuals:AddDropdown("LineOrigin", {
     Title = "Linien von", Values = { "Unten", "Mitte", "Maus" }, Multi = false, Default = 1,
